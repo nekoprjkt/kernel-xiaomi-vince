@@ -3440,6 +3440,7 @@ static struct adreno_snapshot_data a5xx_snapshot_data = {
 	.sect_sizes = &a5xx_snap_sizes,
 };
 
+#if 0
 static struct adreno_coresight_register a5xx_coresight_registers[] = {
 	{ A5XX_RBBM_CFG_DBGBUS_SEL_A },
 	{ A5XX_RBBM_CFG_DBGBUS_SEL_B },
@@ -3626,6 +3627,7 @@ static const struct attribute_group *a5xx_coresight_groups[] = {
 	&a5xx_coresight_group,
 	NULL,
 };
+
 
 static struct adreno_coresight a5xx_coresight = {
 	.registers = a5xx_coresight_registers,

@@ -197,8 +197,8 @@ void thaw_fingerprintd(void)
 
 	read_lock(&tasklist_lock);
 	for_each_process(p) {
-		if ((!memcmp(p->comm, "android.hardware.biometrics.fingerprint@2.1-service", 13)) ||
-			(!memcmp(p->comm,"android.hardware.biometrics.fingerprint@2.1-service.xiaomi_vince", 13))) {
+		if ((!memcmp(p->comm, "android.hardware.biometrics.fingerprint@2.1-service", 52)) ||
+			(!memcmp(p->comm,"android.hardware.biometrics.fingerprint@2.1-service.xiaomi_vince", 65))) {
 			__thaw_task(p);
 			break;
 		}

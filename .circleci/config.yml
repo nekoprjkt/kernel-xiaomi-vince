@@ -1,9 +1,0 @@
-jobs:
-  build:
-    docker:
-      - image: 31482281/ubuntu:latest
-    steps:
-      - checkout
-      - run:
-         name: Run script to start building kernel
-         command: bash build-kernel.sh

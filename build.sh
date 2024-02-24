@@ -28,7 +28,7 @@ DEFCONFIG="vince-perf_defconfig"
 REGENERATE_DEFCONFIG="false" # unset if don't want to regenerate defconfig
 
 # Costumize
-KERNEL="Snapdragon™625-Kernel"
+KERNEL="Neko-lite-Kernel"
 DEVICE="Vince"
 KERNELTYPE="KSU"
 KERNELNAME="${KERNEL}-${DEVICE}-${KERNELTYPE}-$(TZ=Asia/Jakarta date +%y%m%d-%H%M)"

@@ -302,7 +302,6 @@ void vma_set_file(struct vm_area_struct *vma, struct file *file)
 	/* Changing an anonymous vma with this is illegal */
 	get_file(file);
 	swap(vma->vm_file, file);
-	fput(file);
 }
 EXPORT_SYMBOL(vma_set_file);
 

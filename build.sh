@@ -7,7 +7,7 @@
 KERNEL_DIR="${PWD}"
 KERN_IMG="${KERNEL_DIR}"/out/arch/arm64/boot/Image.gz-dtb
 ANYKERNEL=/workspace/Anykernel3
-COMPILER_STRING="Android Clang 17.0.4"
+COMPILER_STRING="Aosp Clang"
 
 # Repo URL
 CLANG_REPO="https://gitlab.com/nekoprjkt/aosp-clang"
@@ -28,9 +28,9 @@ DEFCONFIG="vince-perf_defconfig"
 REGENERATE_DEFCONFIG="false" # unset if don't want to regenerate defconfig
 
 # Costumize
-KERNEL="Neko-lite-Kernel"
+KERNEL="NekoPrjkt-Kernel"
 DEVICE="Vince"
-KERNELTYPE="KSU"
+KERNELTYPE="non-KSU"
 KERNELNAME="${KERNEL}-${DEVICE}-${KERNELTYPE}-$(TZ=Asia/Jakarta date +%y%m%d-%H%M)"
 TEMPZIPNAME="${KERNELNAME}.zip"
 ZIPNAME="${KERNELNAME}.zip"

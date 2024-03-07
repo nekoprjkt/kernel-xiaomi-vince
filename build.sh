@@ -6,7 +6,7 @@
 # Init
 KERNEL_DIR="${PWD}"
 KERN_IMG="${KERNEL_DIR}"/out/arch/arm64/boot/Image.gz-dtb
-ANYKERNEL=/workspace/Anykernel3
+ANYKERNEL=/workspaces/Anykernel3
 COMPILER_STRING="Aosp Clang"
 
 # Repo URL
@@ -15,7 +15,7 @@ ANYKERNEL_REPO="https://github.com/nekoprjkt/Anykernel3"
 ANYKERNEL_BRANCH="vince"
 
 # Compiler
-CLANG_DIR=/workspace/clang
+CLANG_DIR=/workspaces/clang
 #if ! [ -d "${CLANG_DIR}" ]; then
        git clone "$CLANG_REPO" --depth=1 "$CLANG_DIR"
 #fi
@@ -42,7 +42,7 @@ CHATID="-1002001516627"
 TELEGRAM_TOKEN="6661722181:AAHA86zdVQTkkAU7FQowuZa1RJk7tCBQCmY"
 
 # Export Telegram.sh
-TELEGRAM_FOLDER=/workspace/telegram
+TELEGRAM_FOLDER=/workspaces/telegram
 if ! [ -d "${TELEGRAM_FOLDER}" ]; then
     git clone https://github.com/OnTheWay69/telegram.sh/ "${TELEGRAM_FOLDER}"
 fi

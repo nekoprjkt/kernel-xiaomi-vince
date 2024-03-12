@@ -945,7 +945,6 @@ struct adreno_gpudev {
 	unsigned int *const int_bits;
 	const struct adreno_ft_perf_counters *ft_perf_counters;
 	unsigned int ft_perf_counters_count;
-	struct adreno_snapshot_data *snapshot_data;
 
 	struct adreno_perfcounters *perfcounters;
 	const struct adreno_invalid_countables *invalid_countables;

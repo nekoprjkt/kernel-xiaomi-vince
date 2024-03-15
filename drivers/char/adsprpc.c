@@ -362,7 +362,7 @@ struct fastrpc_mmap {
 	int uncached;
 	int secure;
 	uintptr_t attr;
-	bool is_filemap; /* flag to indicate map used in process init */
+	bool is_filemap; /*flag to indicate map used in process init*/
 	unsigned int ctx_refs; /* Indicates reference count for context map */
 };
 
@@ -729,7 +729,7 @@ static int fastrpc_mmap_remove(struct fastrpc_file *fl, uintptr_t va,
 	}
 	hlist_for_each_entry_safe(map, n, &fl->maps, hn) {
 		/* Remove if only one reference map and no context map */
-		if (map->refs == 1 && !map->ctx_refs && map->raddr == va &&
+		if (map->refs == 1 && !map->ctx_refs &&  map->raddr == va &&
 			map->raddr + map->len == va + len &&
 			/* Remove map if not used in process initialization */
 			!map->is_filemap) {

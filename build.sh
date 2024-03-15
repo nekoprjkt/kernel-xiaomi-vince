@@ -28,9 +28,9 @@ DEFCONFIG="vince-perf_defconfig"
 REGENERATE_DEFCONFIG="false" # unset if don't want to regenerate defconfig
 
 # Costumize
-KERNEL="NekoPrjkt-Kernel"
+KERNEL="NekoLite-Kernel"
 DEVICE="Vince"
-KERNELTYPE="non-KSU"
+KERNELTYPE="EOL"
 KERNELNAME="${KERNEL}-${DEVICE}-${KERNELTYPE}-$(TZ=Asia/Jakarta date +%y%m%d-%H%M)"
 TEMPZIPNAME="${KERNELNAME}.zip"
 ZIPNAME="${KERNELNAME}.zip"
